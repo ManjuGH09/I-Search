@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformationActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:fontFamily="casual"
+        android:text="Information Page"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="\n      Introduction:  "
+                android:textColor="#573178"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#993333"
+                android:textSize="20dp"
+                android:text="There are many people in the world who getting missed from home and family.
+                              \nIn most of the cases small children are missed from their parents at public places.
+                              \nThis way since many people are missing, we have designed a mobile application which helps people to find their missing members of their families.
+                              \nIn i-Search application any person can post the details of the missing person and also revert back with the person who is found.\n\n"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="   Literature survey: "
+                android:textColor="#573178"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#993333"
+                android:textSize="20dp"
+                android:text="According to survey each year approximately 100000 people are been missed in India.
+                              \nIn some case many people are found back easily, but in some critical cases missing persons are never reunited with their relatives.
+                              \nFinding lost person can be difficult task.
+                              \nThe currently available Manual System for finding missing person have very long procedure and takes more time.
+                              \nMore time is required for launching a FIR (First Information Report) in police station. Also, time required for finding lost person is more.
+                              \nAlso, during manual process number of manpower for searching lost person is less. "/>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
